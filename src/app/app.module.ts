@@ -17,6 +17,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { RouterModule } from '@angular/router';
 import { AuthService } from './shared/services/auth.service';
 import { AppRoutingModule } from './app-routing.module';
+import { CalculadoraComponent } from './calculadora';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { AppRoutingModule } from './app-routing.module';
     SignInComponent,
     SignUpComponent,
     ForgotPasswordComponent,
-    VerifyEmailComponent
+    VerifyEmailComponent,
+    CalculadoraComponent
   ],
   imports: [
     BrowserModule,

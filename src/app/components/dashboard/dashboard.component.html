@@ -11,10 +11,16 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active">
+              <a class="nav-link active" routerLink="/dashboard">
                 <i class="fas fa-user"></i>User Profile
               </a>
             </li>
+            <li>
+              <a class="nav-link" routerLink="/calculadora">
+                Calculadora
+              </a>
+            </li>
+           
             <!-- Calling SignOut() Api from AuthService -->
             <li class="nav-item">
               <a class="nav-link" (click)="authService.SignOut()">

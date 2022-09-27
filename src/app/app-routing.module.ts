@@ -7,17 +7,25 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { AuthGuard } from './shared/guard/auth.guard';
 import { CalculadoraComponent } from './components/calculadora';
-import { EditarTarefasComponent, ListarTarefaComponent, TarefaRoutes } from './components/tarefas';
+import { ListarTarefaComponent, TarefaRoutes } from './components/tarefas';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   { path: 'sign-in', component: SignInComponent },
   { path: 'register-user', component: SignUpComponent },
-  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [AuthGuard],
+  },
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
-  {path: 'calculadora', component: CalculadoraComponent, canActivate:[AuthGuard]},
-  ...TarefaRoutes
+  {
+    path: 'calculadora',
+    component: CalculadoraComponent,
+    canActivate: [AuthGuard],
+  },
+  ...TarefaRoutes,
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

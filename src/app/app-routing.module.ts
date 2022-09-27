@@ -8,6 +8,7 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { AuthGuard } from './shared/guard/auth.guard';
 import { CalculadoraComponent } from './components/calculadora';
 import { ListarTarefaComponent, TarefaRoutes } from './components/tarefas';
+import { ChartsComponent } from './components/charts';
 
 const routes: Routes = [
   { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
     component: CalculadoraComponent,
     canActivate: [AuthGuard],
   },
+  { path: 'charts', component: ChartsComponent, canActivate: [AuthGuard] },
   ...TarefaRoutes,
 ];
 @NgModule({

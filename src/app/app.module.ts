@@ -17,7 +17,9 @@ import { VerifyEmailComponent } from './components/verify-email/verify-email.com
 import { RouterModule } from '@angular/router';
 import { AuthService } from './shared/services/auth.service';
 import { AppRoutingModule } from './app-routing.module';
-import { CalculadoraComponent } from './calculadora';
+import { CalculadoraComponent } from './components/calculadora';
+import { ListarTarefaComponent, TarefasModule } from './components/tarefas';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { CalculadoraComponent } from './calculadora';
     SignUpComponent,
     ForgotPasswordComponent,
     VerifyEmailComponent,
-    CalculadoraComponent
+    CalculadoraComponent,
+    //ListarTarefaComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +40,7 @@ import { CalculadoraComponent } from './calculadora';
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [AuthService],

@@ -1,45 +1,45 @@
 <!-- Top navigation -->
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
     <a class="navbar-brand col-sm-3 col-md-2 mr-0">
-        <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo">
+      <img class="brand-logo" src="assets/logo-positronx-white.svg" alt="positronX.io Logo">
     </a>
-</nav>
-<!-- Sidebar navigation -->
-<div class="container-fluid">
+  </nav>
+  <!-- Sidebar navigation -->
+  <div class="container-fluid">
     <div class="row">
-        <nav class="col-md-2 d-md-block bg-light sidebar">
-            <div class="sidebar-sticky">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="/dashboard">
-                            <i class="fas fa-user"></i>User Profile
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" routerLink="/calculadora">
-                            Calculadora
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link" routerLink="/tarefas">
-                            Tarefas
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link active" routerLink="/charts">
-                            Charts
-                        </a>
-                    </li>
-
-                    <!-- Calling SignOut() Api from AuthService -->
-                    <li class="nav-item">
-                        <a class="nav-link" (click)="authService.SignOut()">
-                            <i class="fas fa-sign-out-alt"></i>Log out
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="col-md-2 d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dashboard">
+                <i class="fas fa-user"></i>User Profile
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" routerLink="/calculadora">
+                Calculadora
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" routerLink="/tarefas">
+                Tarefas
+              </a>
+            </li>
+            <li>
+              <a class="nav-link active" routerLink="/charts">
+                Charts
+              </a>
+            </li>
+  
+            <!-- Calling SignOut() Api from AuthService -->
+            <li class="nav-item">
+              <a class="nav-link" (click)="authService.SignOut()">
+                <i class="fas fa-sign-out-alt"></i>Log out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
         <!-- Main content -->
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
             <div>
